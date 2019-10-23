@@ -94,7 +94,26 @@ $('.gallery-list li').hover(
 /*	Portfolio filter														  */
 /******************************************************************************/
 
+$(window).resize(function()
+{
+	$('.gallery-list').isotope(
+	{
+		masonry			: {columnWidth:185},
+		resizable		: false,
+		itemSelector	: 'li',
+		animationEngine : 'jquery'
+	});
+});	
 
+$('.filter-list li a').bind('click',function(e) 
+{
+	filterGallery(e,this);
+});
+
+$('.filter-select-box').bind('change',function(e)
+{
+	filterGallery(e,this)
+});
 				
 /******************************************************************************/
 /*	Skill list animation													  */
