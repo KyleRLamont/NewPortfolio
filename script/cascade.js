@@ -40,7 +40,7 @@
 		$this.cascadeWindowWidth=600;
 		$this.cascadeElementMargin=10;
 
-		$this.cascadeMinimumTabCount=5;
+		$this.cascadeMinimumTabCount=4;
 		$this.cascadeMinimumTabVisibleCount=4;
 
 		$this.cascadeElementWidth=0;
@@ -583,7 +583,7 @@
 			margin=0;
 			$this.cascadeWindowWidth=610;
 			
-			$this.cascadeMinimumTabCount=5;
+			$this.cascadeMinimumTabCount=4;
 			$this.cascadeMinimumTabVisibleCount=4;
 
 			if(step==1)
