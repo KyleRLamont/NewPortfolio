@@ -65,30 +65,30 @@ $('.gallery-list img').captify();
 /*	Hover for portfolio images												  */
 /******************************************************************************/
 
-$('.gallery-list').hover(
+// $('.gallery-list').hover(
 
-    function() {},
-    function()
-    {
-        $(this).find('li img').animate({opacity:1},250);
-    }	
+//     function() {},
+//     function()
+//     {
+//         $(this).find('li img').animate({opacity:1},250);
+//     }	
 
-);
+// );
 
-$('.gallery-list li').hover(
+// $('.gallery-list li').hover(
 
-    function() 
-    {
-        $(this).siblings('li').find('img').css('opacity',0.5);
-        $(this).find('img').animate({opacity:1},250);
-    },
+//     function() 
+//     {
+//         $(this).siblings('li').find('img').css('opacity',0.5);
+//         $(this).find('img').animate({opacity:1},250);
+//     },
 
-    function()
-    {
-        $(this).find('img').css('opacity',1);	
-    }
+//     function()
+//     {
+//         $(this).find('img').css('opacity',1);	
+//     }
 
-);
+// );
 	
 /******************************************************************************/
 /*	Portfolio filter														  */
@@ -130,62 +130,62 @@ $('.skill-list-item-level span').each(function()
 /******************************************************************************/
 
 try
-{
-	var coordinate=new google.maps.LatLng(29.803621,-95.37811);
+// {
+// 	var coordinate=new google.maps.LatLng(29.803621,-95.37811);
 
-	var mapOptions= 
-	{
-		zoom:15,
-		center:coordinate,
-		streetViewControl:false,
-		mapTypeControl:false,
-		zoomControlOptions: 
-		{
-			position:google.maps.ControlPosition.RIGHT_CENTER
-		},
-		panControlOptions: 
-		{
-			position:google.maps.ControlPosition.LEFT_CENTER
-		},
-		mapTypeId:google.maps.MapTypeId.ROADMAP
-	};
+// 	var mapOptions= 
+// 	{
+// 		zoom:15,
+// 		center:coordinate,
+// 		streetViewControl:false,
+// 		mapTypeControl:false,
+// 		zoomControlOptions: 
+// 		{
+// 			position:google.maps.ControlPosition.RIGHT_CENTER
+// 		},
+// 		panControlOptions: 
+// 		{
+// 			position:google.maps.ControlPosition.LEFT_CENTER
+// 		},
+// 		mapTypeId:google.maps.MapTypeId.ROADMAP
+// 	};
 
-	var googleMap=new google.maps.Map(document.getElementById('map'),mapOptions);
+// 	var googleMap=new google.maps.Map(document.getElementById('map'),mapOptions);
 
-	var markerOptions=
-	{
-		map:googleMap,
-		position:coordinate,
-		icon:mainURL+'image/map_marker.png'
-	}
+// 	var markerOptions=
+// 	{
+// 		map:googleMap,
+// 		position:coordinate,
+// 		icon:mainURL+'image/map_marker.png'
+// 	}
 
-	new google.maps.Marker(markerOptions);
+// 	new google.maps.Marker(markerOptions);
 	
-	$(window).resize(function() 
-	{
-		try {googleMap.setCenter(coordinate);}
-		catch(e) {}
-	});	
-}
-catch(e) {}	
+// 	$(window).resize(function() 
+// 	{
+// 		try {googleMap.setCenter(coordinate);}
+// 		catch(e) {}
+// 	});	
+// }
+// catch(e) {}	
 
-/******************************************************************************/
+// /******************************************************************************/
 /*	Contact form															  */
 /******************************************************************************/
 
-$('#contact-form').submit(function() 
-{
-	submitContactForm();
-	return(false);
-});
+// $('#contact-form').submit(function() 
+// {
+// 	submitContactForm();
+// 	return(false);
+// });
 
-$('#contact-form-reset').bind('click',function(e) 
-{
-	e.preventDefault();
-	$('#contact-form').find('input[type="text"],textarea').val('').blur();
-});
+// $('#contact-form-reset').bind('click',function(e) 
+// {
+// 	e.preventDefault();
+// 	$('#contact-form').find('input[type="text"],textarea').val('').blur();
+// });
 
-$('label.infield').inFieldLabels();
+// $('label.infield').inFieldLabels();
 
 /******************************************************************************/
 /******************************************************************************/
